@@ -1,4 +1,5 @@
 # Lesson 01 Quick Reference Card
+
 ## GitHub Copilot for Cybersecurity Specialists
 
 **🎯 Lesson Goal:** Systematic vulnerability detection using GitHub Copilot
@@ -24,18 +25,21 @@
 ## 🎤 Key Phrases (Your Voice)
 
 **Opening Hooks:**
+
 - "Here's the thing about..."
 - "Real talk:"
 - "Let's get hands-on"
 - "This is where it gets interesting"
 
 **Teaching Moments:**
+
 - "The beauty here is..."
 - "Think of this as..."
 - "Bottom line:"
 - "I learned this the hard way when..."
 
 **Transitions:**
+
 - "Let's dive into..."
 - "Now watch what happens when..."
 - "Here's the payoff..."
@@ -69,6 +73,7 @@
 ## 🔥 Critical Success Factors
 
 **Every Slide Must Have:**
+
 - ✅ FRAMER hook that grabs attention
 - ✅ Full-sentence explanations (no fragments)
 - ✅ Real company examples with specifics
@@ -76,6 +81,7 @@
 - ✅ Your authentic voice
 
 **Every Demo Must Show:**
+
 - ✅ Vulnerable code first
 - ✅ Copilot prompt used
 - ✅ Secure refactoring
@@ -87,12 +93,14 @@
 ## ⚡ Energy & Pacing
 
 **High Energy Moments:**
+
 - Opening hook ("Copilot is already in your workflow...")
 - Demo payoffs (showing tests passing)
 - Security paradox slide (math is brutal)
 - Custom scanner findings
 
 **Slower, Technical Moments:**
+
 - Configuration walkthrough
 - Parameterized query explanation
 - CSP header details
@@ -105,18 +113,21 @@
 ## 🎬 Recording Reminders
 
 **Before Each Slide:**
+
 - Read FRAMER statement naturally (don't recite)
 - Pause after bullet point before explaining
 - Use company names with confidence
 - End with PRO TIP as mic drop
 
 **During Demos:**
+
 - Narrate what you're doing (pair programming style)
 - Show Copilot prompts on screen
 - Pause to let viewers process output
 - Validate everything works (run tests)
 
 **Avoid Saying:**
+
 - "As you can see..." (they might not)
 - "Obviously..." (it's not obvious)
 - "Simply..." (dismissive)
@@ -127,6 +138,7 @@
 ## 📈 Success Metrics
 
 **After Recording, You Should Have:**
+
 - [ ] 9 slides with complete speaker notes read
 - [ ] 4 working demonstrations executed
 - [ ] All 4 learning objectives covered
@@ -147,6 +159,7 @@
 ## 💪 Confidence Boosters
 
 **You've Got This Because:**
+
 - ✅ Speaker notes are comprehensive (2,000+ chars per slide)
 - ✅ Demos are proven patterns from real consulting work
 - ✅ Examples are authentic (based on actual client scenarios)
@@ -154,6 +167,7 @@
 - ✅ Content is current (OWASP 2024, GitHub 2024 data)
 
 **Your Differentiators:**
+
 - 🎖️ Microsoft MVP credibility
 - 📚 200+ Pluralsight courses worth of teaching experience
 - 💼 Real enterprise security consulting background
@@ -173,6 +187,7 @@
 ---
 
 **Quick Links:**
+
 - Full Deck: `copilot-cybersecurity-lesson-01-complete.pptx`
 - Build Summary: `lesson-01-build-summary.md`
 - Demo Runbook: `lesson-01-demo-runbook.md`
