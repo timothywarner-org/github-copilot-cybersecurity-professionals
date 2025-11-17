@@ -12,6 +12,7 @@
 This lesson demonstrates using GitHub Copilot Chat and GitHub Advanced Security for comprehensive security analysis workflows. You'll perform interactive code reviews, generate threat models, build custom security linters, and automate dependency vulnerability management.
 
 **Learning Objectives:**
+
 1. Use Copilot Chat for interactive security code reviews and STRIDE threat modeling
 2. Generate automated security checklists and compliance reports from GHAS data
 3. Build custom security linters for organization-specific policies
@@ -22,6 +23,7 @@ This lesson demonstrates using GitHub Copilot Chat and GitHub Advanced Security 
 ## 🛠️ Prerequisites
 
 ### Required Tools
+
 ```bash
 # Core tools
 - GitHub account with Copilot subscription
@@ -44,6 +46,7 @@ az --version
 ```
 
 ### Test Repository Setup
+
 ```bash
 # Clone the demo repository
 git clone https://github.com/techtrainertim/copilot-security-demos
@@ -59,6 +62,7 @@ gh auth status
 ```
 
 ### Environment Configuration
+
 ```bash
 # Set GitHub token for API access (if needed)
 export GITHUB_TOKEN="your_github_token_here"
@@ -114,6 +118,7 @@ Focus on authentication and authorization vulnerabilities. Use OWASP Top 10 as f
 ```
 
 **What Copilot Should Find:**
+
 - JWT signature validation bypass (HS256 vs RS256 confusion)
 - Missing token expiration enforcement
 - Hardcoded JWT secret in code
@@ -147,6 +152,7 @@ Provide specific attack scenarios for each STRIDE category."
 ```
 
 **Expected Output Structure:**
+
 ```
 STRIDE Threat Model for Auth API
 
@@ -192,12 +198,14 @@ Copy the generated report and save to `security-reports/auth-api-review-2024-11.
 ### Teaching Points
 
 **Emphasize:**
+
 - Architectural context is critical for accurate security analysis
 - Conversational approach finds issues traditional static analysis misses
 - STRIDE provides systematic framework for threat identification
 - AI accelerates discovery, but human judgment validates findings
 
 **Common Issues:**
+
 - If Copilot gives generic advice, provide more specific architectural details
 - If findings are vague, ask follow-up questions drilling into specific code paths
 - If threat model is incomplete, prompt for specific STRIDE categories
@@ -272,6 +280,7 @@ fetchSecurityAlerts()
 ```
 
 Run the script:
+
 ```bash
 node fetch-ghas-data.js > ghas-findings.json
 ```
@@ -295,6 +304,7 @@ Format as markdown table with columns: Finding | OWASP Category | CWE | Severity
 ```
 
 **Expected Output:**
+
 ```markdown
 # OWASP Top 10 Compliance Report
 **Generated:** 2024-11-16
@@ -327,6 +337,7 @@ Keep to one page, avoid technical jargon."
 ```
 
 **Expected Output:**
+
 ```markdown
 # Security Executive Summary - November 2024
 
@@ -407,6 +418,7 @@ jobs:
 ```
 
 Demonstrate running the workflow:
+
 ```bash
 # Trigger workflow manually
 gh workflow run security-digest.yml
@@ -418,12 +430,14 @@ gh run list --workflow=security-digest.yml
 ### Teaching Points
 
 **Emphasize:**
+
 - GHAS provides data, Copilot provides intelligence and context
 - Stakeholder-specific reporting (technical vs executive) drives action
 - Automation enables continuous security visibility vs quarterly snapshots
 - Trend data (week-over-week changes) is more actionable than point-in-time status
 
 **Common Issues:**
+
 - GitHub API rate limits - cache results, don't query on every request
 - If Copilot mapping is inaccurate, provide OWASP/CWE reference documentation
 - Executive summaries must include business impact, not just technical severity
@@ -650,12 +664,14 @@ gh pr create --title "Test security linter" --body "Testing custom Semgrep rule"
 ### Teaching Points
 
 **Emphasize:**
+
 - Custom linters catch YOUR organization's specific anti-patterns
 - Generic tools (ESLint, Semgrep) can be extended for custom security policies
 - Educational error messages reduce repeat violations
 - Enforcement in CI prevents vulnerabilities from reaching production
 
 **Common Issues:**
+
 - False positives kill developer trust - test rules thoroughly before enforcement
 - Semgrep regex patterns can be tricky - use Copilot to refine and test
 - Integration with GitHub Security tab provides visibility across organization
@@ -723,6 +739,7 @@ node scripts/fetch-dependabot-alerts.js | jq '.[0:3]'
 ```
 
 **Example output:**
+
 ```json
 [
   {
@@ -776,6 +793,7 @@ QUESTIONS:
 ```
 
 **Expected Response:**
+
 ```markdown
 EXPLOITABILITY ANALYSIS: CVE-2024-5678 (Axios SSRF)
 
@@ -912,6 +930,7 @@ echo "✅ PR created successfully"
 ```
 
 Save and execute:
+
 ```bash
 chmod +x scripts/create-security-pr.sh
 ./scripts/create-security-pr.sh
@@ -980,12 +999,14 @@ jobs:
 ### Teaching Points
 
 **Emphasize:**
+
 - Not all CVEs are exploitable in every context - architecture matters
 - Exploitability analysis focuses human effort on real risks
 - Automated PRs still require human validation and testing
 - Security test automation provides confidence in dependency upgrades
 
 **Common Issues:**
+
 - Breaking changes in major version upgrades require careful testing
 - False confidence in "automatic" fixes - always validate manually
 - Integration test coverage is critical for safe dependency updates
@@ -997,21 +1018,25 @@ jobs:
 ### Lesson Objectives Met?
 
 **Security Code Review:**
+
 - ✅ Demonstrated conversational security analysis finding auth/authz flaws
 - ✅ Generated STRIDE threat model in < 5 minutes
 - ✅ Showed 10x faster review velocity vs manual line-by-line
 
 **Automated Compliance:**
+
 - ✅ Transformed GHAS data into OWASP-mapped compliance report
 - ✅ Generated executive risk summary with business impact
 - ✅ Automated weekly security digest via GitHub Actions
 
 **Custom Linters:**
+
 - ✅ Built Semgrep rule for Azure hardcoded credential detection
 - ✅ Integrated into CI pipeline for enforcement
 - ✅ Demonstrated educational error messages reducing repeat violations
 
 **Dependency Management:**
+
 - ✅ Analyzed CVE exploitability in architectural context
 - ✅ Generated intelligent upgrade path with breaking change analysis
 - ✅ Created automated PR with comprehensive testing validation
@@ -1019,12 +1044,14 @@ jobs:
 ### Key Demonstrations
 
 **Demonstrated:**
+
 1. **Security Code Review:** Conversational analysis identifying auth/authz vulnerabilities
 2. **Threat Modeling:** STRIDE analysis generating comprehensive threat models in minutes
 3. **Security Auditing:** Automated compliance validation across Azure infrastructure
 4. **Dependency Management:** Intelligent vulnerability prioritization and automated remediation
 
 **Reusable Artifacts:**
+
 - Security review prompts and report templates
 - STRIDE threat model framework
 - Azure audit automation scripts
@@ -1047,6 +1074,7 @@ jobs:
 ## 🎓 Resources
 
 **Course Repository:** timw.info/copilot-security
+
 - Security review templates
 - Threat modeling frameworks
 - Audit automation scripts
@@ -1060,23 +1088,27 @@ jobs:
 ## 💡 Pro Tips for Recording
 
 ### Timing
+
 - Code review demo: 10 min (show 2-3 key findings, not every issue)
 - Threat modeling: 10 min (show STRIDE analysis, don't read entire output)
 - Security audit: 10 min (execute script, show critical findings only)
 - Dependency management: 10 min (show prioritization logic, sample PR)
 
 ### Copilot Chat Tips
+
 - Start with clean chat history
 - Use specific architectural context in prompts
 - Show iterative refinement (follow-up questions)
 - Demonstrate copy/paste to GitHub for integration
 
 ### Common Issues
+
 - If Copilot verbose: Ask for "concise summary"
 - If analysis generic: Add more architectural context
 - If audit script errors: Verify Azure CLI authentication
 
 ### Remember Tim's Voice
+
 - First-principles security explanations
 - Real-world breach examples and lessons learned
 - Skeptical about automation replacing judgment

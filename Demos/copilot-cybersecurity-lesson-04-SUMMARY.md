@@ -10,8 +10,10 @@
 ## 📦 Deliverables
 
 ### PowerPoint Presentation
+
 **File:** `copilot-cybersecurity-lesson-04.pptx`  
 **Slides:** 11 total
+
 - Title slide
 - Learning objectives
 - 4 teaching slides (conceptual content)
@@ -19,15 +21,18 @@
 - Key takeaways slide
 
 **Speaker Notes:** 100% coverage - all slides include full FRAMER methodology
+
 - Hook statement that grabs attention
 - Bullet-by-bullet explanations with enterprise examples
 - Pro tips from real-world security experience
 
 ### Demo Runbook
+
 **File:** `copilot-cybersecurity-lesson-04-demo-runbook.md`  
 **Size:** 31.4 KB comprehensive documentation
 
 **Contents:**
+
 - Prerequisites and environment setup
 - 4 complete demo workflows with step-by-step instructions
 - Teaching points for each demonstration
@@ -89,6 +94,7 @@
    - Automated PRs with comprehensive testing validation
 
 ### Force Multiplier Quote
+>
 > "Security teams using AI-assisted review analyze 10x more code without 10x more people."
 
 ---
@@ -96,11 +102,13 @@
 ## 💻 Demonstrations
 
 ### Demo 1: Interactive Security Code Review
+
 **Duration:** 10 minutes  
 **Technology:** Express.js API, GitHub Copilot Chat  
 **Demonstrates:** Conversational security analysis, STRIDE threat modeling
 
 **What You'll See:**
+
 - Analyze Node.js Express API for auth/authz vulnerabilities
 - Use conversational prompts to identify JWT validation issues
 - Generate comprehensive STRIDE threat model
@@ -111,11 +119,13 @@
 ---
 
 ### Demo 2: Automated Compliance Reporting
+
 **Duration:** 10 minutes  
 **Technology:** GitHub API, GHAS, Copilot  
 **Demonstrates:** Compliance automation, stakeholder reporting
 
 **What You'll See:**
+
 - Query GHAS API for CodeQL and Dependabot findings
 - Generate OWASP Top 10 compliance report
 - Create executive summary with business impact metrics
@@ -126,11 +136,13 @@
 ---
 
 ### Demo 3: Custom Security Linter
+
 **Duration:** 10 minutes  
 **Technology:** Semgrep, GitHub Actions  
 **Demonstrates:** Custom security policy enforcement
 
 **What You'll See:**
+
 - Identify Azure hardcoded credential anti-pattern
 - Use Copilot to generate Semgrep rule
 - Test against vulnerable and secure code samples
@@ -141,11 +153,13 @@
 ---
 
 ### Demo 4: AI-Powered Dependency Management
+
 **Duration:** 10 minutes  
 **Technology:** Dependabot, GitHub API, Copilot  
 **Demonstrates:** Intelligent vulnerability prioritization
 
 **What You'll See:**
+
 - Fetch Dependabot alerts via GitHub API
 - Use Copilot to assess CVE exploitability
 - Generate pull request with intelligent upgrade path
@@ -160,6 +174,7 @@
 **Repository:** timw.info/copilot-security
 
 **Included Materials:**
+
 - Security review prompt templates
 - STRIDE threat modeling framework
 - Custom linter examples (ESLint, Semgrep)
@@ -172,6 +187,7 @@
 ## ✅ Quality Assurance Checklist
 
 ### PowerPoint Slides
+
 - [x] All slide titles in sentence case (Microsoft standard)
 - [x] "Title and content" layout used consistently
 - [x] Teaching content in full sentences (no fragments)
@@ -183,6 +199,7 @@
 - [x] Repository link mentioned (timw.info/copilot-security)
 
 ### Speaker Notes
+
 - [x] FRAMER hook grabs attention and sets context
 - [x] Every bullet explained in 2-3 full sentences
 - [x] No sentence fragments in speaker notes
@@ -191,6 +208,7 @@
 - [x] Tim's authentic voice throughout
 
 ### Demo Runbook
+
 - [x] Prerequisites clearly documented
 - [x] Environment setup instructions complete
 - [x] Step-by-step demo scripts with exact commands
@@ -200,6 +218,7 @@
 - [x] Code samples tested and validated
 
 ### Security Content
+
 - [x] OWASP Top 10 alignment
 - [x] CWE pattern references
 - [x] Current tool integration (GHAS, Semgrep)
@@ -211,6 +230,7 @@
 ## 🎬 Recording Tips
 
 ### Timing Breakdown
+
 - Introduction: 1-2 minutes
 - Demo 1 (Code Review): 10 minutes
 - Demo 2 (Compliance): 10 minutes
@@ -219,6 +239,7 @@
 - Wrap-up: 2-3 minutes
 
 ### Best Practices
+
 - Start each demo with clean environment
 - Show 2-3 key findings, not every detail
 - Focus on practical ROI and metrics
@@ -226,11 +247,13 @@
 - Celebrate wins, acknowledge limitations
 
 ### Common Issues
+
 - If Copilot gives verbose output: Ask for "concise summary"
 - If analysis is generic: Add more architectural context
 - If scripts error: Verify authentication (GitHub CLI, Azure CLI)
 
 ### Voice Guidelines
+
 - First-principles security explanations (Feynman technique)
 - Real-world breach examples and lessons learned
 - Skeptical optimism about AI capabilities
@@ -241,6 +264,7 @@
 ## 🚀 What's Next
 
 **Lesson 5 Preview:** Compliance, Incident Response, and Configuration Management
+
 - Automated compliance validation (SOC 2, HIPAA, PCI-DSS)
 - Incident response playbook generation
 - Infrastructure-as-code security scanning
@@ -253,6 +277,7 @@
 ## 📊 Success Metrics
 
 **If this lesson succeeds, students will:**
+
 - Perform security code reviews 10x faster using Copilot Chat
 - Generate STRIDE threat models in < 5 minutes vs days
 - Reduce audit preparation time from weeks to hours

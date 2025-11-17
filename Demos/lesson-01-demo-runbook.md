@@ -1,4 +1,5 @@
 # GitHub Copilot for Cybersecurity Specialists
+
 ## Lesson 01 Demo Runbook
 
 **Course:** GitHub Copilot for Cybersecurity Specialists
@@ -12,6 +13,7 @@
 ## 🎬 Pre-Demo Environment Setup
 
 **Required Software:**
+
 - VS Code (latest stable)
 - GitHub Copilot extension
 - GitHub Copilot Chat extension
@@ -20,6 +22,7 @@
 - Git
 
 **Repository Structure:**
+
 ```bash
 cd ~/copilot-security-demos/lesson-01
 ls -la
@@ -52,6 +55,7 @@ lesson-01/
 ```
 
 **Pre-Demo Checklist:**
+
 - [ ] VS Code open with clean workspace
 - [ ] GitHub Copilot signed in and active
 - [ ] Node.js version verified (`node --version`)
@@ -63,14 +67,17 @@ lesson-01/
 ---
 
 ## 🎬 Demo 1: Configuring GitHub Copilot for Security
+
 **Runtime: 8 minutes**
 
 ### Learning Objective
+
 Set up Copilot for security tasks and secure coding best practices
 
 ### Demo Flow
 
 #### 1.1: Install Security Extensions (2 min)
+
 ```bash
 # Show VS Code Extensions panel
 # Install GitHub Advanced Security extension
@@ -80,11 +87,13 @@ code --list-extensions | grep -i security
 ```
 
 **Talking Points:**
+
 - "Out of the box, Copilot optimizes for velocity. We need security-specific extensions."
 - "GitHub Advanced Security integrates CodeQL scanning directly into your IDE."
 - "These extensions teach Copilot about OWASP patterns in real-time."
 
 #### 1.2: Configure Workspace Settings (3 min)
+
 ```json
 // .vscode/settings.json
 {
@@ -106,6 +115,7 @@ code --list-extensions | grep -i security
 ```
 
 **Copilot Prompt to Use:**
+
 ```
 Help me configure VS Code workspace settings for security-focused development.
 I want Copilot to prefer parameterized queries, input validation, and secure
@@ -113,11 +123,13 @@ defaults. Show me settings.json configuration.
 ```
 
 **Talking Points:**
+
 - "Workspace settings = project-level Copilot behavior"
 - "Check these into version control - everyone gets secure Copilot by default"
 - "Configuration as code prevents configuration drift"
 
 #### 1.3: Integrate SAST/DAST Tools (2 min)
+
 ```bash
 # Install Semgrep
 npm install -g semgrep
@@ -129,17 +141,20 @@ semgrep --config auto .
 ```
 
 **Copilot Chat Prompt:**
+
 ```
 How do I integrate Semgrep with my Node.js project for continuous
 security scanning? Show me package.json scripts and CI/CD integration.
 ```
 
 **Talking Points:**
+
 - "Copilot augments your existing tools, doesn't replace them"
 - "Use Copilot Chat to interpret SAST findings - 'Why is this flagged?'"
 - "The beauty: Copilot explains security tool output in plain English"
 
 #### 1.4: Validate Configuration (1 min)
+
 ```javascript
 // Create test file: vulnerable-pattern-test.js
 const query = "SELECT * FROM users WHERE id = " + userId;  // Intentionally vulnerable
@@ -148,12 +163,14 @@ const query = "SELECT * FROM users WHERE id = " + userId;  // Intentionally vuln
 ```
 
 **Copilot Chat Prompt:**
+
 ```
 Analyze this code for SQL injection vulnerabilities. Explain the attack vector
 and show me the secure alternative.
 ```
 
 **Expected Behavior:**
+
 - Copilot should identify the vulnerability
 - Should suggest parameterized query alternative
 - Configuration is working if security-aware suggestions appear
@@ -164,14 +181,17 @@ and show me the secure alternative.
 ---
 
 ## 🎬 Demo 2: SQL Injection Detection and Remediation
+
 **Runtime: 10 minutes**
 
 ### Learning Objective
+
 Identify and mitigate SQL injection vulnerabilities in code
 
 ### Demo Flow
 
 #### 2.1: Identify Vulnerable Pattern (3 min)
+
 ```javascript
 // demo-02-sql-injection/vulnerable/api.js
 const express = require('express');
@@ -201,6 +221,7 @@ app.listen(3000, () => console.log('API running on port 3000'));
 ```
 
 **Copilot Chat Prompt:**
+
 ```
 Analyze this Express API endpoint for SQL injection vulnerabilities.
 Show me:
@@ -211,17 +232,20 @@ Show me:
 ```
 
 **Expected Copilot Response:**
+
 - Identifies line with string concatenation
 - Explains attacker could inject `1 OR 1=1`
 - Shows how to bypass authentication
 - Explains SQL parser interprets injected SQL as code
 
 **Talking Points:**
+
 - "Classic vulnerability - still #1 on OWASP 2024"
 - "Copilot shows us not just WHERE, but HOW to exploit"
 - "Understanding the attack makes you a better defender"
 
 #### 2.2: Refactor to Parameterized Query (3 min)
+
 ```javascript
 // demo-02-sql-injection/secure/api.js
 app.get('/user/:id', (req, res) => {
@@ -238,17 +262,20 @@ app.get('/user/:id', (req, res) => {
 ```
 
 **Copilot Prompt:**
+
 ```
 Refactor this vulnerable SQL query to use parameterized queries with
 prepared statements. Show both vulnerable and secure versions side by side.
 ```
 
 **Talking Points:**
+
 - "Parameter binding = SQL treats user input as data, not code"
 - "Database driver handles escaping automatically"
 - "Notice the array syntax [userId] - that's the magic"
 
 #### 2.3: Generate Security Tests (3 min)
+
 ```javascript
 // demo-02-sql-injection/tests/sql-injection.test.js
 const request = require('supertest');
@@ -275,6 +302,7 @@ describe('SQL Injection Prevention', () => {
 ```
 
 **Copilot Prompt:**
+
 ```
 Generate security unit tests for this API that attempt SQL injection.
 Include common payloads: OR 1=1, UNION SELECT, comment injection.
@@ -282,11 +310,13 @@ Tests should pass if injection fails (meaning our protection works).
 ```
 
 **Talking Points:**
+
 - "Fix isn't enough - prove it's fixed and prevent regression"
 - "Security tests in CI pipeline = continuous validation"
 - "If these tests pass, injection is blocked"
 
 #### 2.4: Build Reusable Detection Prompt (1 min)
+
 ```markdown
 # prompts/sql-detection.md
 
@@ -309,6 +339,7 @@ Output as JSON for automated processing.
 ```
 
 **Talking Points:**
+
 - "This prompt template becomes a one-line audit tool"
 - "Contoso uses this to audit 50+ microservices in minutes"
 - "Save your best prompts - they're infrastructure"
@@ -316,14 +347,17 @@ Output as JSON for automated processing.
 ---
 
 ## 🎬 Demo 3: XSS Detection and Prevention
+
 **Runtime: 10 minutes**
 
 ### Learning Objective
+
 Detect and prevent XSS vulnerabilities with GitHub Copilot assistance
 
 ### Demo Flow
 
 #### 3.1: Scan Unsafe DOM Manipulation (3 min)
+
 ```javascript
 // demo-03-xss/vulnerable-react-app/UserProfile.jsx
 import React, { useState } from 'react';
@@ -354,6 +388,7 @@ function UserProfile() {
 ```
 
 **Copilot Chat Prompt:**
+
 ```
 Analyze this React component for XSS vulnerabilities. Identify:
 1. All uses of dangerouslySetInnerHTML
@@ -365,16 +400,19 @@ Show me how an attacker would exploit each vulnerability.
 ```
 
 **Expected Findings:**
+
 - dangerouslySetInnerHTML without DOMPurify
 - User input flows directly to DOM
 - Example payload: `<img src=x onerror="alert('XSS')">`
 
 **Talking Points:**
+
 - "React protects you by default - unless you use dangerouslySetInnerHTML"
 - "Copilot traces data flow across multiple files"
 - "The attack surface is anywhere user input touches DOM"
 
 #### 3.2: Implement Sanitization (2 min)
+
 ```javascript
 // demo-03-xss/secure-react-app/UserProfile.jsx
 import React, { useState } from 'react';
@@ -408,17 +446,20 @@ function UserProfile() {
 ```
 
 **Copilot Prompt:**
+
 ```
 Refactor this React component to prevent XSS. Use DOMPurify to sanitize
 user input before rendering. Show proper import and usage.
 ```
 
 **Talking Points:**
+
 - "DOMPurify removes dangerous tags/attributes"
 - "Still allows safe HTML like bold/italic"
 - "Defense layer 1: Input sanitization"
 
 #### 3.3: Add Content Security Policy (3 min)
+
 ```javascript
 // demo-03-xss/secure-react-app/server.js
 const express = require('express');
@@ -448,6 +489,7 @@ app.listen(3000);
 ```
 
 **Copilot Chat Prompt:**
+
 ```
 Generate Content Security Policy headers for a React application.
 Include script-src, style-src, img-src directives. Block inline
@@ -455,11 +497,13 @@ JavaScript execution. Explain each directive.
 ```
 
 **Talking Points:**
+
 - "CSP = last line of defense against XSS"
 - "Even if sanitization fails, CSP blocks execution"
 - "Defense layer 2: Execution prevention"
 
 #### 3.4: Generate XSS Test Suite (2 min)
+
 ```javascript
 // demo-03-xss/tests/xss-prevention.test.js
 const { render, screen } = require('@testing-library/react');
@@ -486,6 +530,7 @@ describe('XSS Prevention', () => {
 ```
 
 **Copilot Prompt:**
+
 ```
 Generate React Testing Library tests that attempt XSS injection.
 Include payloads: script tags, event handlers, javascript: URLs.
@@ -498,14 +543,17 @@ Tests should pass if XSS is blocked.
 ---
 
 ## 🎬 Demo 4: Custom Vulnerability Scanners
+
 **Runtime: 12 minutes**
 
 ### Learning Objective
+
 Create custom GitHub Copilot-assisted vulnerability scanners for proprietary code and business logic flaws
 
 ### Demo Flow
 
 #### 4.1: Analyze IDOR Vulnerability (3 min)
+
 ```javascript
 // demo-04-custom-scanners/idor-app/api/documents.js
 const express = require('express');
@@ -531,6 +579,7 @@ router.get('/documents/:docId', async (req, res) => {
 ```
 
 **Copilot Chat Prompt:**
+
 ```
 Analyze this multi-tenant API for authorization vulnerabilities.
 This is a SaaS app where users should only access their tenant's data.
@@ -545,17 +594,20 @@ Explain how an attacker from Tenant A could access Tenant B's documents.
 ```
 
 **Expected Analysis:**
+
 - Identifies missing tenant check
 - Shows attacker can enumerate document IDs
 - Explains horizontal privilege escalation risk
 - Suggests tenant-aware query
 
 **Talking Points:**
+
 - "Generic scanners miss this - it requires understanding your auth model"
 - "Business logic flaw: 'User A shouldn't see User B's data'"
 - "This vulnerability ships in 30% of multi-tenant apps"
 
 #### 4.2: Build Custom Scanner (4 min)
+
 ```javascript
 // demo-04-custom-scanners/scanner/idor-scanner.js
 const axios = require('axios');
@@ -629,6 +681,7 @@ module.exports = IDORScanner;
 ```
 
 **Copilot Prompt:**
+
 ```
 Build a custom vulnerability scanner for IDOR in a multi-tenant SaaS API.
 The scanner should:
@@ -642,11 +695,13 @@ Provide working Node.js code with axios.
 ```
 
 **Talking Points:**
+
 - "This scanner understands YOUR business logic"
 - "It knows Tenant A shouldn't access Tenant B's data"
 - "Commercial tools can't provide this specificity"
 
 #### 4.3: Test Race Conditions (3 min)
+
 ```javascript
 // demo-04-custom-scanners/scanner/race-condition-scanner.js
 const axios = require('axios');
@@ -684,6 +739,7 @@ async function testRaceCondition(apiUrl, couponCode, iterations = 50) {
 ```
 
 **Copilot Prompt:**
+
 ```
 Generate a race condition scanner for e-commerce coupon redemption.
 The scanner should:
@@ -696,11 +752,13 @@ Use Promise.allSettled for concurrent execution.
 ```
 
 **Talking Points:**
+
 - "Race conditions are timing-dependent - hard to catch manually"
 - "Wide World Importers lost thousands to this exact vulnerability"
 - "Copilot generates concurrent test harness automatically"
 
 #### 4.4: Generate Actionable Report (2 min)
+
 ```javascript
 // demo-04-custom-scanners/reports/generate-report.js
 function generateVulnerabilityReport(findings) {
@@ -735,6 +793,7 @@ function generateVulnerabilityReport(findings) {
 ```
 
 **Copilot Prompt:**
+
 ```
 Generate a vulnerability report structure that includes:
 - Summary statistics (critical/high/medium counts)
@@ -755,12 +814,14 @@ Output as JSON for developer consumption.
 ## 📋 Post-Demo Summary
 
 **Key Demonstrations Completed:**
+
 1. ✅ Configured Copilot for security-focused development
 2. ✅ Detected and remediated SQL injection systematically
 3. ✅ Prevented XSS with defense-in-depth approach
 4. ✅ Built custom scanners for business logic vulnerabilities
 
 **Deliverables:**
+
 - Working vulnerable and secure code samples
 - Reusable Copilot prompt templates
 - Security test suites for CI/CD integration
@@ -783,17 +844,20 @@ All demo code available at: timw.info/copilot-security/lesson-01
 ## ⚠️ Common Demo Pitfalls to Avoid
 
 **Technical Issues:**
+
 - [ ] Copilot not logged in or rate limited
 - [ ] Node modules not installed (run `npm install` before demo)
 - [ ] Vulnerable apps not running on correct ports
 - [ ] Test databases not seeded with sample data
 
 **Timing Issues:**
+
 - [ ] Reading prompts verbatim (paraphrase for natural flow)
 - [ ] Waiting too long for Copilot responses (have backup screenshots)
 - [ ] Skipping validation steps (always show tests passing)
 
 **Teaching Issues:**
+
 - [ ] Assuming audience knows IDOR/XSS/etc (explain briefly)
 - [ ] Not explaining WHY, just WHAT (first-principles thinking)
 - [ ] Forgetting to show vulnerable → secure comparison
@@ -803,12 +867,14 @@ All demo code available at: timw.info/copilot-security/lesson-01
 ## 🚀 Demo Preparation Checklist
 
 **24 Hours Before:**
+
 - [ ] Test all demo environments end-to-end
 - [ ] Verify Copilot responses match expectations (regenerate if needed)
 - [ ] Take backup screenshots of expected Copilot outputs
 - [ ] Run through timing (stay within 8/10/10/12 minute allocations)
 
 **1 Hour Before:**
+
 - [ ] Start all necessary services (databases, APIs)
 - [ ] Open VS Code with proper workspace
 - [ ] Clear terminal history (clean slate for recording)
@@ -816,6 +882,7 @@ All demo code available at: timw.info/copilot-security/lesson-01
 - [ ] Verify audio levels
 
 **Immediately Before Recording:**
+
 - [ ] Close distracting apps (Slack, email, etc.)
 - [ ] Disable notifications
 - [ ] Set Copilot to appropriate verbosity level

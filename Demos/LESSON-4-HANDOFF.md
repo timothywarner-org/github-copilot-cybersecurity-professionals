@@ -10,6 +10,7 @@
 ## 📦 Deliverable Files
 
 ### Primary Deliverables
+
 ```
 copilot-cybersecurity-lesson-04.pptx
 ├─ 11 slides total (1 title, 1 objectives, 4 teaching, 4 demos, 1 takeaways)
@@ -26,6 +27,7 @@ copilot-cybersecurity-lesson-04-demo-runbook.md
 ```
 
 ### Supporting Materials
+
 ```
 copilot-cybersecurity-lesson-04-SUMMARY.md
 └─ Quality assurance checklist, learning objectives, key messages
@@ -39,6 +41,7 @@ copilot-cybersecurity-lesson-04-RECORDING-REFERENCE.md
 ## ✅ Quality Verification
 
 ### PowerPoint Presentation
+
 - ✅ All slide titles in sentence case (Microsoft standard)
 - ✅ "Title and content" layout used consistently  
 - ✅ Teaching content in full sentences (no fragments)
@@ -50,6 +53,7 @@ copilot-cybersecurity-lesson-04-RECORDING-REFERENCE.md
 - ✅ Repository link mentioned: timw.info/copilot-security
 
 ### Speaker Notes Quality
+
 - ✅ FRAMER hook grabs attention and sets context
 - ✅ Every bullet explained in 2-3 full sentences
 - ✅ No sentence fragments - all complete thoughts
@@ -59,6 +63,7 @@ copilot-cybersecurity-lesson-04-RECORDING-REFERENCE.md
 - ✅ First-principles explanations (Feynman technique)
 
 ### Demo Runbook Completeness
+
 - ✅ Prerequisites clearly documented
 - ✅ Environment setup instructions complete
 - ✅ Step-by-step demo scripts with exact commands
@@ -68,6 +73,7 @@ copilot-cybersecurity-lesson-04-RECORDING-REFERENCE.md
 - ✅ Code samples tested and validated
 
 ### Security Content Accuracy
+
 - ✅ OWASP Top 10 alignment
 - ✅ CWE pattern references
 - ✅ Current tool integration (GHAS, Semgrep, GitHub Actions)
@@ -105,15 +111,18 @@ copilot-cybersecurity-lesson-04-RECORDING-REFERENCE.md
 ## 🔑 Key Messages (Verified Consistent)
 
 ### Main Takeaways
+
 1. Copilot Chat enables 10x faster security code reviews
 2. Automated compliance reporting reduces audit prep from weeks to hours
 3. Custom linters enforce YOUR organization's security policies
 4. AI-powered dependency analysis solves alert fatigue
 
 ### Force Multiplier Quote
+>
 > "Security teams using AI-assisted review analyze 10x more code without 10x more people."
 
 ### Course Tagline
+>
 > "Making Copilot your security tool instead of your security problem"
 
 ---
@@ -121,6 +130,7 @@ copilot-cybersecurity-lesson-04-RECORDING-REFERENCE.md
 ## 💻 Demonstrations (Complete)
 
 ### Demo 1: Interactive Security Code Review (10 min)
+
 **What:** Conversational analysis of Express.js API finding auth/authz vulnerabilities  
 **Technology:** VS Code, GitHub Copilot Chat, Node.js  
 **Files:** `demos/auth-api/server.js`, `middleware/auth.js`  
@@ -128,6 +138,7 @@ copilot-cybersecurity-lesson-04-RECORDING-REFERENCE.md
 **Deliverable:** Security review report + STRIDE threat model
 
 ### Demo 2: Automated Compliance Reporting (10 min)
+
 **What:** GHAS data → OWASP compliance report → Executive summary  
 **Technology:** GitHub API, GHAS, Copilot, GitHub Actions  
 **Files:** `scripts/compliance-report.js`, `.github/workflows/security-digest.yml`  
@@ -135,6 +146,7 @@ copilot-cybersecurity-lesson-04-RECORDING-REFERENCE.md
 **Automation:** Weekly security digest email
 
 ### Demo 3: Custom Security Linter (10 min)
+
 **What:** Build Semgrep rule detecting Azure hardcoded credentials  
 **Technology:** Semgrep, GitHub Actions  
 **Files:** `linters/azure-storage-auth.yml`, `test-cases/vulnerable.js`  
@@ -142,6 +154,7 @@ copilot-cybersecurity-lesson-04-RECORDING-REFERENCE.md
 **Enforcement:** CI pipeline fails build on policy violation
 
 ### Demo 4: AI-Powered Dependency Management (10 min)
+
 **What:** CVE exploitability analysis → Automated remediation PR  
 **Technology:** Dependabot, GitHub API, Copilot  
 **Files:** `scripts/dependency-analysis.js`, `scripts/create-security-pr.sh`  
@@ -153,6 +166,7 @@ copilot-cybersecurity-lesson-04-RECORDING-REFERENCE.md
 ## 📊 Success Metrics
 
 **If this lesson succeeds, students will:**
+
 - Perform security code reviews 10x faster using Copilot Chat
 - Generate STRIDE threat models in < 5 minutes (vs days of workshops)
 - Reduce audit preparation time from weeks to hours
@@ -160,6 +174,7 @@ copilot-cybersecurity-lesson-04-RECORDING-REFERENCE.md
 - Prioritize vulnerability remediation based on actual exploitability
 
 **Real-World Impact Examples:**
+
 - Wide World Importers: Code review time 8 hours → 45 minutes
 - Fabrikam: Vulnerability backlog 200 alerts → 37 critical issues
 - Northwind: Audit prep 2 weeks → 4 hours
@@ -171,6 +186,7 @@ copilot-cybersecurity-lesson-04-RECORDING-REFERENCE.md
 ## 🎬 Recording Readiness
 
 ### Pre-Recording Setup Required
+
 1. Clone demo repository: `git clone https://github.com/techtrainertim/copilot-security-demos`
 2. Navigate to Lesson 4: `cd copilot-security-demos/lesson-04`
 3. Install dependencies: `npm install` in each demo folder
@@ -179,6 +195,7 @@ copilot-cybersecurity-lesson-04-RECORDING-REFERENCE.md
 6. Test each demo once before recording
 
 ### Recording Day Checklist
+
 - [ ] Print the RECORDING-REFERENCE.md quick reference card
 - [ ] Open PowerPoint presentation
 - [ ] Open VS Code with demo repository
@@ -191,6 +208,7 @@ copilot-cybersecurity-lesson-04-RECORDING-REFERENCE.md
 - [ ] Coffee/water within reach ☕💧
 
 ### Critical Prompts Ready
+
 All 4 demo prompts are in the RECORDING-REFERENCE.md file - copy/paste ready.
 
 ---
@@ -198,12 +216,14 @@ All 4 demo prompts are in the RECORDING-REFERENCE.md file - copy/paste ready.
 ## 🚀 What's Next
 
 **Lesson 5 Topics:**
+
 - Compliance automation (SOC 2, HIPAA, PCI-DSS)
 - Incident response playbook generation
 - Infrastructure-as-code security scanning
 - Configuration drift detection and remediation
 
 **Course Completion:**
+
 - Lessons 1-4: ✅ COMPLETE
 - Lesson 5: 🔜 READY TO BUILD
 
@@ -216,11 +236,13 @@ All 4 demo prompts are in the RECORDING-REFERENCE.md file - copy/paste ready.
 **Editor Contact:** Laura Lewin (Pearson)
 
 **Technical Issues:**
+
 - Semgrep installation: `pip install semgrep`
 - GitHub CLI auth: `gh auth login`
 - Azure CLI auth: `az login`
 
 **Backup Plans:**
+
 - Pre-saved Copilot Chat conversations in `demos/*/chat-backup.md`
 - Pre-generated reports in `scripts/example-report.md`
 - Working Semgrep rules in `linters/` directory
@@ -231,11 +253,13 @@ All 4 demo prompts are in the RECORDING-REFERENCE.md file - copy/paste ready.
 ## ✨ Final Notes
 
 **This lesson represents the culmination of everything learned so far:**
+
 - Lessons 1-3 taught BUILDING security (detect, implement, test)
 - Lesson 4 teaches ANALYZING and VERIFYING security (review, model, audit)
 - This shift from creation to validation is the natural progression
 
 **Teaching Philosophy Maintained:**
+
 - First-principles explanations (Feynman technique)
 - Real-world enterprise examples with specific metrics
 - Skeptical optimism about AI capabilities
