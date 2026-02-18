@@ -2,23 +2,40 @@
 
 ## Project Overview
 
-This is a **professional training course** teaching cybersecurity specialists how to use GitHub Copilot and GitHub Advanced Security (GHAS) for security workflows. The repository contains lesson materials, demo runbooks, and PowerPoint presentations for a 5-module course.
+This is a **professional training course** teaching cybersecurity specialists how to use GitHub Copilot and GitHub Advanced Security (GHAS) for security workflows. The repository contains lesson materials, demo runbooks, PowerPoint presentations, and a curated security prompts library for a 5-module course.
 
 **Course URL**: `timw.info/copilot-security`
 **Instructor**: Tim Warner
 **Target Audience**: Security professionals adopting AI-assisted security development
 
+## Security Context
+
+This is a cybersecurity training workspace. All code analysis, generation, and review should be performed through a security-first lens. When working in this repo:
+
+- Treat every code snippet as a potential security teaching example
+- Always reference OWASP Top 10, CWE Top 25, or NIST controls when discussing vulnerabilities
+- Demonstrate the detect-remediate-test workflow pattern used throughout the course
+- Flag insecure patterns even in comments, documentation, or example code
+- Code in `vulnerable-apps/` is intentionally insecure for training purposes
+
+## Custom Agents Available
+
+This repository includes two specialized agents in `.github/agents/`:
+
+- **@security-reviewer** - Reviews code for security vulnerabilities (OWASP, CWE, language-specific patterns)
+- **@compliance-checker** - Validates IaC, containers, and pipelines against CIS, NIST, and STIG frameworks
+
+Use these agents when working on security review or compliance validation tasks.
+
 ## Repository Structure
 
 ```
 Demos/          # Lesson runbooks and course documentation
-├── lesson-01-demo-runbook.md              # Vulnerability Detection
-├── lesson-02-demo-runbook-v2.md           # Security Protocols
-├── Lesson-03-Demo-Runbook-PROPER.md       # Automated Testing
-├── copilot-cybersecurity-lesson-04-*.md   # Code Review & Threat Modeling
-├── mapping-document.md                     # Repo-to-module mapping
-Docs/           # Supporting documentation (Word docs)
-PPTs/           # PowerPoint presentation files (.pptx)
+Prompts/        # Curated security prompt library (43 production-ready prompts)
+PPTs/           # Lesson presentation PDFs
+vulnerable-apps/  # Intentionally vulnerable apps (NodeGoat, WebGoat, TerraGoat, PyGoat)
+.github/agents/   # Custom Copilot agents for security review and compliance
+.github/prompts/  # Reusable prompt files for common security tasks
 ```
 
 ## Course Module Structure (5 Lessons @ 40 min each)

@@ -87,7 +87,7 @@ You'll learn how to use GitHub Copilot to:
 1. **Clone this repository:**
    ```bash
    git clone https://github.com/timothywarner-org/github-copilot-cybersecurity-professionals.git
-   cd github-copiolot-cybersecurity-professionals
+   cd github-copilot-cybersecurity-professionals
    ```
 
 2. **Verify prerequisites:**
@@ -138,24 +138,26 @@ You'll learn how to use GitHub Copilot to:
 ## 📂 Repository Structure
 
 ```
-github-copiolot-cybersecurity-professionals/
+github-copilot-cybersecurity-professionals/
 ├── README.md                    # This file - start here!
 ├── Demos/                       # Demo runbooks for each lesson
-│   ├── Lesson-01-Vulnerability-Detection-Demo-Runbook.md
-│   ├── Lesson-02-Security-Protocols-Demo-Runbook.md
-│   ├── Lesson-03-Automated-Security-Testing-Demo-Runbook.md
-│   ├── Lesson-04-Code-Review-Threat-Modeling-Demo-Runbook.md
-│   ├── Lesson-05-Compliance-Configuration-Demo-Runbook.md
-│   └── lesson-01-quick-reference.md  # Quick reference cards
-├── Docs/                        # Course documentation
-│   ├── Warner.HighLevelOutline.GitHub Copilot for Cybersecurity Specialists.md
-│   └── GitHub_Copilot_Cybersecurity_Specialists_Scripts.md
-├── PPTs/                        # PowerPoint presentations
-│   ├── copilot-cybersecurity-lesson-01-complete.pptx
-│   ├── copilot-cybersecurity-lesson-02-v2.pptx
-│   ├── copilot-cybersecurity-lesson-03.pptx
-│   ├── copilot-cybersecurity-lesson-04-enriched.pptx
-│   └── copilot-cybersecurity-lesson-05.pptx
+│   ├── Lesson-01-Demo-Runbook.md
+│   ├── Lesson-02-Demo-Runbook.md
+│   ├── Lesson-03-Demo-Runbook.md
+│   ├── Lesson-04-Demo-Runbook.md
+│   ├── Lesson-05-Demo-Runbook.md
+│   └── mapping-document.md
+├── SECURITY.md                  # Security policy
+├── CONTRIBUTING.md              # Contributing guidelines
+├── CODE_OF_CONDUCT.md           # Code of conduct
+├── .github/                     # Issue/PR templates
+├── PPTs/                        # Lesson presentation PDFs
+│   ├── copilot-cybersecurity-lesson-01-complete.pdf
+│   ├── copilot-cybersecurity-lesson-02-v2.pdf
+│   ├── copilot-cybersecurity-lesson-03.pdf
+│   ├── Lesson-03-Automated-Security-Testing-PROPER.pdf
+│   ├── copilot-cybersecurity-lesson-04-enriched.pdf
+│   └── copilot-cybersecurity-lesson-05.pdf
 ├── vulnerable-apps/             # Intentionally vulnerable applications
 │   ├── NodeGoat/               # OWASP Node.js vulnerable app
 │   ├── WebGoat/                # OWASP Java vulnerable app
@@ -176,8 +178,7 @@ github-copiolot-cybersecurity-professionals/
 2. **Open the corresponding demo runbook** in `/Demos/`
 3. **Follow along hands-on** using the vulnerable applications
 4. **Practice with Copilot** using the prompts demonstrated
-5. **Review the quick reference** cards for key concepts
-6. **Repeat for each lesson** in sequence
+5. **Repeat for each lesson** in sequence
 
 **Self-Paced Learning:**
 - Each lesson is self-contained but builds on previous lessons
@@ -187,27 +188,26 @@ github-copiolot-cybersecurity-professionals/
 **Getting Help:**
 - Review the demo runbook's "Common Pitfalls" sections
 - Check the vulnerable app documentation in each subdirectory
-- Refer to the course scripts in `/Docs/` for detailed explanations
+- Review the demo runbooks for detailed step-by-step explanations
 
 ### For Instructors
 
 **Teaching Preparation:**
 
 1. **Review the demo runbook** for your lesson
-2. **Read the quick reference card** (when available) for pacing guidance
-3. **Set up all vulnerable applications** before recording/teaching
-4. **Test each Copilot prompt** to account for response variations
-5. **Review speaker notes** in the PowerPoint presentations
+2. **Set up all vulnerable applications** before recording/teaching
+3. **Test each Copilot prompt** to account for response variations
+4. **Review speaker notes** in the lesson PDFs
 
 **Demo Delivery Tips:**
 - Use the runbooks as your script - they include teaching points, expected outputs, and transitions
-- The PowerPoint speaker notes use the FRAMER methodology (Frame, Relate, Apply, Metaphor, Expand, Reinforce)
+- The lesson PDF speaker notes use the FRAMER methodology (Frame, Relate, Apply, Metaphor, Expand, Reinforce)
 - Enterprise examples use fictional companies: Contoso, Fabrikam, Adventure Works, Tailwind Traders, Wide World Importers, Northwind
 - PRO TIP sections on every slide provide actionable security advice
 
 **Recording Guidelines:**
 - Allocate 40 minutes per lesson
-- Use the quick reference cards for energy/pacing checkpoints
+- Use the demo runbooks for energy/pacing checkpoints
 - Account for Copilot latency in your timing
 - Have backup screenshots ready in case Copilot responses vary
 
@@ -217,8 +217,7 @@ github-copiolot-cybersecurity-professionals/
 
 ### Lesson 1: Vulnerability Detection with Copilot
 
-**Demo Runbook:** `/Demos/Lesson-01-Vulnerability-Detection-Demo-Runbook.md`
-**Quick Reference:** `/Demos/lesson-01-quick-reference.md`
+**Demo Runbook:** `/Demos/Lesson-01-Demo-Runbook.md`
 **Primary App:** NodeGoat (`vulnerable-apps/NodeGoat`)
 **Key Topics:** SQL injection, XSS, custom scanners, CodeQL
 
@@ -229,7 +228,7 @@ github-copiolot-cybersecurity-professionals/
 
 ### Lesson 2: Implement Security Protocols
 
-**Demo Runbook:** `/Demos/Lesson-02-Security-Protocols-Demo-Runbook.md`
+**Demo Runbook:** `/Demos/Lesson-02-Demo-Runbook.md`
 **Primary Apps:** WebGoat, PyGoat, TerraGoat
 **Key Topics:** Authentication, OAuth, encryption, zero-trust, IaC security
 
@@ -240,7 +239,7 @@ github-copiolot-cybersecurity-professionals/
 
 ### Lesson 3: Automated Security Testing
 
-**Demo Runbook:** `/Demos/Lesson-03-Automated-Security-Testing-Demo-Runbook.md`
+**Demo Runbook:** `/Demos/Lesson-03-Demo-Runbook.md`
 **Primary App:** NodeGoat
 **Key Topics:** Security unit tests, fuzzing, SAST/DAST, CI/CD pipelines
 
@@ -251,7 +250,7 @@ github-copiolot-cybersecurity-professionals/
 
 ### Lesson 4: Security Code Review, Threat Modeling, and Auditing
 
-**Demo Runbook:** `/Demos/Lesson-04-Code-Review-Threat-Modeling-Demo-Runbook.md`
+**Demo Runbook:** `/Demos/Lesson-04-Demo-Runbook.md`
 **Primary Apps:** WebGoat, NodeGoat
 **Key Topics:** Threat modeling (STRIDE), code review, linters, dependency scanning
 
@@ -262,7 +261,7 @@ github-copiolot-cybersecurity-professionals/
 
 ### Lesson 5: Compliance, Incident Response, and Configuration Management
 
-**Demo Runbook:** `/Demos/Lesson-05-Compliance-Configuration-Demo-Runbook.md`
+**Demo Runbook:** `/Demos/Lesson-05-Demo-Runbook.md`
 **Primary App:** TerraGoat
 **Key Topics:** CIS Benchmarks, NIST, STIG, IaC compliance, incident response playbooks
 
@@ -319,7 +318,7 @@ Use this checklist to verify you're ready to start the course:
 - [ ] PyGoat running on port 8000
 - [ ] TerraGoat initialized (terraform init)
 - [ ] All demo runbooks accessible in `/Demos/`
-- [ ] PowerPoint presentations accessible in `/PPTs/`
+- [ ] Lesson PDFs accessible in `/PPTs/`
 
 **Troubleshooting:**
 - **Port conflicts:** Change ports in app configs or stop conflicting services
@@ -427,7 +426,6 @@ This repository is licensed under the MIT License. See [LICENSE](LICENSE) for de
 **Tim Warner** is a Microsoft MVP, Pluralsight author, and cybersecurity instructor with over 25 years of IT experience. He specializes in cloud security, DevSecOps, and security automation.
 
 - **Website:** [TechTrainerTim.com](https://techtrainertim.com)
-- **Twitter/X:** [@TechTrainerTim](https://twitter.com/TechTrainerTim)
 - **LinkedIn:** [timothywarner](https://linkedin.com/in/timothywarner)
 - **YouTube:** [TechTrainerTim](https://youtube.com/@TechTrainerTim)
 
@@ -445,4 +443,4 @@ This repository is licensed under the MIT License. See [LICENSE](LICENSE) for de
 
 ---
 
-*Course Version: 1.0 | Last Updated: November 2025*
+*Course Version: 1.0 | Last Updated: February 2026*
