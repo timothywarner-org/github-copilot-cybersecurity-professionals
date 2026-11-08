@@ -4,6 +4,14 @@
 
 by Tim Warner | Microsoft Press | 3.5 hours of hands-on training
 
+> **Looking for the demo code?** Each lesson's demo files (for example `lesson-01/demo-02-sql-injection/`) live in the companion repo **[timothywarner-org/github-security-testbed](https://github.com/timothywarner-org/github-security-testbed)**. Clone it next to this one:
+>
+> ```bash
+> git clone https://github.com/timothywarner-org/github-security-testbed
+> ```
+>
+> This repo holds the slide PDFs, demo runbooks, the Copilot prompt library, and the vulnerable practice apps.
+
 ---
 
 ## 📚 Course Overview
@@ -192,12 +200,12 @@ github-copilot-cybersecurity-professionals/
 
 ### For Instructors
 
-**Teaching Preparation:**
+**Before each lesson:**
 
-1. **Review the demo runbook** for your lesson
-2. **Set up all vulnerable applications** before recording/teaching
-3. **Test each Copilot prompt** to account for response variations
-4. **Review speaker notes** in the lesson PDFs
+1. **Review the demo runbook** for the lesson
+2. **Set up the vulnerable applications** the lesson uses
+3. **Expect Copilot's answers to vary** from run to run, so read each response before you act on it
+4. **Skim the lesson's slide PDF** in `PPTs/`
 
 **Demo Delivery Tips:**
 - Use the runbooks as your script - they include teaching points, expected outputs, and transitions
@@ -217,7 +225,8 @@ github-copilot-cybersecurity-professionals/
 
 ### Lesson 1: Vulnerability Detection with Copilot
 
-**Demo Runbook:** `/Demos/Lesson-01-Demo-Runbook.md`
+**Demo Runbook:** [Demos/lesson-01-demo-runbook.md](Demos/lesson-01-demo-runbook.md)
+**Demo Code:** [github-security-testbed/lesson-01](https://github.com/timothywarner-org/github-security-testbed/tree/main/lesson-01)
 **Primary App:** NodeGoat (`vulnerable-apps/NodeGoat`)
 **Key Topics:** SQL injection, XSS, custom scanners, CodeQL
 
@@ -228,7 +237,8 @@ github-copilot-cybersecurity-professionals/
 
 ### Lesson 2: Implement Security Protocols
 
-**Demo Runbook:** `/Demos/Lesson-02-Demo-Runbook.md`
+**Demo Runbook:** [Demos/Lesson-02-Demo-Runbook.md](Demos/Lesson-02-Demo-Runbook.md)
+**Demo Code:** [github-security-testbed/lesson-02](https://github.com/timothywarner-org/github-security-testbed/tree/main/lesson-02)
 **Primary Apps:** WebGoat, PyGoat, TerraGoat
 **Key Topics:** Authentication, OAuth, encryption, zero-trust, IaC security
 
@@ -239,7 +249,8 @@ github-copilot-cybersecurity-professionals/
 
 ### Lesson 3: Automated Security Testing
 
-**Demo Runbook:** `/Demos/Lesson-03-Demo-Runbook.md`
+**Demo Runbook:** [Demos/Lesson-03-Demo-Runbook.md](Demos/Lesson-03-Demo-Runbook.md)
+**Demo Code:** [github-security-testbed/lesson-03](https://github.com/timothywarner-org/github-security-testbed/tree/main/lesson-03)
 **Primary App:** NodeGoat
 **Key Topics:** Security unit tests, fuzzing, SAST/DAST, CI/CD pipelines
 
@@ -250,7 +261,8 @@ github-copilot-cybersecurity-professionals/
 
 ### Lesson 4: Security Code Review, Threat Modeling, and Auditing
 
-**Demo Runbook:** `/Demos/Lesson-04-Demo-Runbook.md`
+**Demo Runbook:** [Demos/Lesson-04-Demo-Runbook.md](Demos/Lesson-04-Demo-Runbook.md)
+**Demo Code:** [github-security-testbed/lesson-04](https://github.com/timothywarner-org/github-security-testbed/tree/main/lesson-04)
 **Primary Apps:** WebGoat, NodeGoat
 **Key Topics:** Threat modeling (STRIDE), code review, linters, dependency scanning
 
@@ -261,7 +273,8 @@ github-copilot-cybersecurity-professionals/
 
 ### Lesson 5: Compliance, Incident Response, and Configuration Management
 
-**Demo Runbook:** `/Demos/Lesson-05-Demo-Runbook.md`
+**Demo Runbook:** [Demos/Lesson-05-Demo-Runbook.md](Demos/Lesson-05-Demo-Runbook.md)
+**Demo Code:** [github-security-testbed/lesson-05](https://github.com/timothywarner-org/github-security-testbed/tree/main/lesson-05)
 **Primary App:** TerraGoat
 **Key Topics:** CIS Benchmarks, NIST, STIG, IaC compliance, incident response playbooks
 
@@ -332,11 +345,12 @@ Use this checklist to verify you're ready to start the course:
 
 ### Course Materials
 - **Course Repository:** [github.com/timothywarner-org/github-copilot-cybersecurity-professionals](https://github.com/timothywarner-org/github-copilot-cybersecurity-professionals)
-- **Course Website:** timw.info/copilot-security
+- **Demo Code:** [github.com/timothywarner-org/github-security-testbed](https://github.com/timothywarner-org/github-security-testbed)
+- **Instructor Website:** [TechTrainerTim.com](https://techtrainertim.com)
 
 ### GitHub Copilot Documentation
 - [GitHub Copilot Docs](https://docs.github.com/en/copilot)
-- [Copilot for Business Security](https://resources.github.com/security/github-copilot-enterprise-security/)
+- [GitHub Copilot Trust Center](https://copilot.github.trust.page/)
 - [GitHub Advanced Security](https://docs.github.com/en/code-security)
 
 ### Security Frameworks & Standards

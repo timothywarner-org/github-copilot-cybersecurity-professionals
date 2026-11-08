@@ -19,20 +19,20 @@ Use GitHub Copilot for:
 ## Prompts in This Lesson
 
 ### Infrastructure-as-Code Security (2 prompts)
-1. [Audit Terraform for CIS Compliance](./01-Terraform-CIS-Audit.md)
-2. [Generate CIS-Compliant IaC Modules](./02-CIS-Compliant-Modules.md)
+1. [Audit Terraform for CIS Compliance](./ALL-PROMPTS.md#1-audit-terraform-for-cis-compliance)
+2. [Generate CIS-Compliant IaC Modules](./ALL-PROMPTS.md#2-generate-cis-compliant-iac-modules)
 
 ### CIS Benchmark Automation (2 prompts)
-3. [CIS Benchmark Validation Script](./03-CIS-Validation-Script.md)
-4. [CIS Compliance Scanning](./04-CIS-Scanning.md)
+3. [CIS Benchmark Validation Script](./ALL-PROMPTS.md#3-cis-benchmark-validation-script)
+4. [CIS Compliance Scanning](./ALL-PROMPTS.md#4-cis-compliance-scanning-automation)
 
 ### STIG Compliance (2 prompts)
-5. [PowerShell DSC for STIG](./05-STIG-DSC-Configuration.md)
-6. [STIG CI/CD Integration](./06-STIG-CI-CD.md)
+5. [PowerShell DSC for STIG](./ALL-PROMPTS.md#5-powershell-dsc-for-stig)
+6. [STIG CI/CD Integration](./ALL-PROMPTS.md#6-stig-cicd-integration)
 
 ### Incident Response (2 prompts)
-7. [Ransomware Response Playbook](./07-IR-Ransomware-Playbook.md)
-8. [Automated Incident Containment](./08-IR-Automation.md)
+7. [Ransomware Response Playbook](./ALL-PROMPTS.md#7-ransomware-incident-response-playbook)
+8. [Automated Incident Containment](./ALL-PROMPTS.md#8-automated-incident-containment)
 
 ---
 

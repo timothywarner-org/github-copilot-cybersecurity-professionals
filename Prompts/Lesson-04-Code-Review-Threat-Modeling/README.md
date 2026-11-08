@@ -20,21 +20,21 @@ Use GitHub Copilot for:
 ## Prompts in This Lesson
 
 ### Interactive Code Review (3 prompts)
-1. [Set Architectural Context](./01-Architecture-Context.md)
-2. [Deep Security Audit](./02-Security-Audit.md)
-3. [Conversational Follow-up Analysis](./03-Follow-up-Analysis.md)
+1. [Set Architectural Context](./ALL-PROMPTS.md#1-set-architectural-context)
+2. [Deep Security Audit](./ALL-PROMPTS.md#2-deep-security-audit)
+3. [Conversational Follow-up Analysis](./ALL-PROMPTS.md#3-conversational-follow-up-analysis)
 
 ### STRIDE Threat Modeling (3 prompts)
-4. [Generate Payment Flow Diagram](./04-Flow-Diagram.md)
-5. [STRIDE Analysis](./05-STRIDE-Analysis.md)
-6. [Mitigation Implementation Plan](./06-Mitigation-Plan.md)
+4. [Generate Payment Flow Diagram](./ALL-PROMPTS.md#4-generate-payment-flow-diagram)
+5. [STRIDE Analysis](./ALL-PROMPTS.md#5-stride-threat-model-analysis)
+6. [Mitigation Implementation Plan](./ALL-PROMPTS.md#6-mitigation-implementation-plan)
 
 ### Compliance Reporting (2 prompts)
-7. [GHAS API Compliance Report](./07-Compliance-Report.md)
-8. [Automated Report Generation](./08-Report-Automation.md)
+7. [GHAS API Compliance Report](./ALL-PROMPTS.md#7-ghas-api-compliance-report)
+8. [Automated Report Generation](./ALL-PROMPTS.md#8-automated-report-generation-workflow)
 
 ### Dependency Analysis (1 prompt)
-9. [CVE Exploitability Analysis](./09-CVE-Analysis.md)
+9. [CVE Exploitability Analysis](./ALL-PROMPTS.md#9-cve-exploitability-analysis)
 
 ---
 

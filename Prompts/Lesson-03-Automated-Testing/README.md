@@ -21,23 +21,23 @@ Build automated security testing covering:
 ## Prompts in This Lesson
 
 ### Security Unit Tests
-1. [OAuth Security Tests](./01-OAuth-Security-Tests.md)
-2. [Input Validation Security Tests](./02-Input-Validation-Tests.md)
+1. [OAuth Security Tests](./ALL-PROMPTS.md#1-oauth-security-tests)
+2. [Input Validation Security Tests](./ALL-PROMPTS.md#2-input-validation-security-tests)
 
 ### Fuzz Testing
-3. [Fuzz Testing Framework](./03-Fuzzing-Framework.md)
-4. [Payload Generation](./04-Payload-Generation.md)
+3. [Fuzz Testing Framework](./ALL-PROMPTS.md#3-fuzz-testing-framework)
+4. [Payload Generation](./ALL-PROMPTS.md#2-input-validation-security-tests)
 
 ### SAST Integration
-5. [CodeQL Workflow Configuration](./05-CodeQL-Workflow.md)
-6. [Custom CodeQL Queries](./06-CodeQL-Custom-Queries.md)
+5. [CodeQL Workflow Configuration](./ALL-PROMPTS.md#4-codeql-workflow-configuration)
+6. [Custom CodeQL Queries](./ALL-PROMPTS.md#5-custom-codeql-queries)
 
 ### DAST Integration
-7. [OWASP ZAP Integration](./07-ZAP-DAST-Integration.md)
+7. [OWASP ZAP Integration](./ALL-PROMPTS.md#6-owasp-zap-dast-integration)
 
 ### Continuous Security
-8. [Comprehensive Security Pipeline](./08-Security-Pipeline.md)
-9. [Security Metrics Dashboard](./09-Security-Metrics.md)
+8. [Comprehensive Security Pipeline](./ALL-PROMPTS.md#7-comprehensive-security-pipeline)
+9. [Security Metrics Dashboard](./ALL-PROMPTS.md#8-security-metrics-dashboard)
 
 ---
 

@@ -255,17 +255,17 @@ Always validate Copilot-generated code with:
 
 ### Finding → Fixing → Testing Workflow
 
-1. **Find**: [SQL Injection Detection](./Lesson-01-Vulnerability-Detection/SQL-Injection-Detection.md)
-2. **Fix**: [Parameterized Queries Remediation](./Lesson-01-Vulnerability-Detection/SQL-Injection-Remediation.md)
-3. **Test**: [Security Unit Tests for SQL Injection](./Lesson-03-Automated-Testing/Security-Unit-Tests.md)
-4. **Prevent**: [CodeQL Custom Queries](./Lesson-03-Automated-Testing/CodeQL-Custom-Queries.md)
+1. **Find**: [SQL Injection Detection](./Lesson-01-Vulnerability-Detection/01-SQL-Injection-Analysis.md)
+2. **Fix**: [Parameterized Queries Remediation](./Lesson-01-Vulnerability-Detection/03-SQL-Injection-Remediation.md)
+3. **Test**: [Security Unit Tests for SQL Injection](./Lesson-03-Automated-Testing/README.md)
+4. **Prevent**: [CodeQL Custom Queries](./Lesson-03-Automated-Testing/ALL-PROMPTS.md#5-custom-codeql-queries)
 
 ### Build → Secure → Deploy Workflow
 
-1. **Build**: [OAuth 2.0 Implementation](./Lesson-02-Security-Protocols/OAuth-PKCE-Implementation.md)
-2. **Secure**: [JWT Validation Middleware](./Lesson-02-Security-Protocols/JWT-Validation-Middleware.md)
-3. **Test**: [OAuth Security Tests](./Lesson-02-Security-Protocols/OAuth-Security-Tests.md)
-4. **Review**: [Authentication Audit](./Lesson-04-Code-Review-Threat-Modeling/Authentication-Security-Audit.md)
+1. **Build**: [OAuth 2.0 Implementation](./Lesson-02-Security-Protocols/01-OAuth-PKCE-Implementation.md)
+2. **Secure**: [JWT Validation Middleware](./Lesson-02-Security-Protocols/ALL-PROMPTS.md#2-jwt-validation-middleware)
+3. **Test**: [OAuth Security Tests](./Lesson-02-Security-Protocols/ALL-PROMPTS.md#3-oauth-security-tests)
+4. **Review**: [Authentication Audit](./Lesson-04-Code-Review-Threat-Modeling/ALL-PROMPTS.md#2-deep-security-audit)
 
 ---
 

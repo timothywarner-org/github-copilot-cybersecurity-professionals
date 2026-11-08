@@ -120,9 +120,9 @@ Include PKCE, JWT tokens, and refresh token rotation.
 
 ## Follow-up Prompts
 
-1. **Validation**: [JWT Validation Middleware](./02-JWT-Validation-Middleware.md)
-2. **Testing**: [OAuth Security Tests](./03-OAuth-Security-Tests.md)
-3. **Code Review**: [Interactive Security Audit](../Lesson-04-Code-Review-Threat-Modeling/Interactive-Code-Review.md)
+1. **Validation**: [JWT Validation Middleware](./ALL-PROMPTS.md#2-jwt-validation-middleware)
+2. **Testing**: [OAuth Security Tests](./ALL-PROMPTS.md#3-oauth-security-tests)
+3. **Code Review**: [Interactive Security Audit](../Lesson-04-Code-Review-Threat-Modeling/README.md)
 
 ---
 
@@ -140,4 +140,4 @@ Include PKCE, JWT tokens, and refresh token rotation.
 
 ---
 
-[← Back to Lesson 02 Index](./README.md) | [Next: JWT Validation →](./02-JWT-Validation-Middleware.md)
+[← Back to Lesson 02 Index](./README.md) | [Next: JWT Validation →](./ALL-PROMPTS.md#2-jwt-validation-middleware)
